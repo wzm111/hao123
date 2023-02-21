@@ -394,6 +394,12 @@ export const tableData = [
         icon: 'developer.mozilla.org.png',
         website: 'https://developer.mozilla.org/zh-CN/docs/Web',
       },
+      {
+        name: 'localstoredb',
+        desc: 'localstoredb',
+        icon: 'www.npmjs.com.png',
+        website: 'https://www.npmjs.com/package/localstoredb',
+      },
     ],
   },
 
@@ -760,6 +766,12 @@ export const tableData = [
         desc: '宣传自由软件的价值',
         icon: 'cloud.tencent.com.ico',
         website: 'https://mirrors.tencent.com/',
+      },
+      {
+        name: 'easyclone-cli',
+        desc: 'easyclone-clis',
+        icon: 'www.npmjs.com.png',
+        website: 'https://www.npmjs.com/package/easyclone-cli',
       },
     ],
   },
