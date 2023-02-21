@@ -80,6 +80,74 @@ export const tableData = [
     icon: 'el-icon-monitor',
     children: [
       {
+        name: 'Vue',
+        desc: '渐进式JavaScript 框架',
+        icon: 'cn.vuejs.org.png',
+        website: 'https://cn.vuejs.org/',
+      },
+
+      {
+        name: 'React',
+        desc: '用于构建用户界面的 JavaScript 库',
+        icon: 'react.docschina.org.svg',
+        website: 'https://react.docschina.org/',
+      },
+
+      {
+        name: 'Angular',
+        desc: 'Angular 是一个应用设计框架与开发平台，旨在创建高效而精致的单页面应用。',
+        icon: 'angular.cn.ico',
+        website: 'https://angular.cn/',
+      },
+
+      {
+        name: 'KnockoutJs',
+        desc: 'Knockout is a JavaScript library that helps you to create rich, responsive display and editor user interfaces with a clean underlying data model.',
+        icon: 'knockoutjs.com.ico',
+        website: 'https://knockoutjs.com/',
+      },
+
+      {
+        name: 'TypeScript',
+        desc: 'TypeScript是JavaScript类型的超集,它可以编译成纯JavaScript',
+        icon: 'www.tslang.cn.ico',
+        website: 'https://www.tslang.cn/index.html',
+      },
+
+      {
+        name: 'Webpack',
+        desc: '打包所有的资源',
+        icon: 'webpack.js.org.ico',
+        website: 'https://webpack.js.org/',
+      },
+
+      {
+        name: 'Rollup',
+        desc: 'Rollup 是一个 JavaScript 模块打包工具，可以将多个小的代码片段编译为完整的库和应用。',
+        icon: 'www.rollupjs.com.png',
+        website: 'https://www.rollupjs.com/',
+      },
+
+      {
+        name: 'Babel',
+        desc: 'Babel 是一个 JavaScript 编译器',
+        icon: 'www.babeljs.cn.png',
+        website: 'https://www.babeljs.cn/',
+      },
+
+      {
+        name: 'Node.js',
+        desc: '一个基于 Chrome V8 引擎 的 JavaScript 运行时',
+        icon: 'nodejs.org.png',
+        website: 'https://nodejs.org/zh-cn/',
+      },
+      {
+        name: 'NPM',
+        desc: ' Node package manager',
+        icon: 'www.npmjs.com.png',
+        website: 'https://www.npmjs.com/',
+      },
+      {
         name: 'Bootstrap',
         desc: '简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。',
         icon: 'www.bootcss.com.png',
@@ -121,13 +189,6 @@ export const tableData = [
             website: 'https://vant-contrib.gitee.io/vant-weapp/#/home',
           },
         ],
-      },
-
-      {
-        name: 'Vue.js',
-        desc: '渐进式JavaScript 框架',
-        icon: 'cn.vuejs.org.png',
-        website: 'https://cn.vuejs.org/',
       },
 
       {
@@ -173,34 +234,22 @@ export const tableData = [
         website: 'http://www.aigei.com/',
       },
       {
-        name: 'codepen',
+        name: 'CodePen',
         desc: 'The best place to build, test, and discover front-end code.',
         icon: 'codepen.io.ico',
         website: 'https://codepen.io/',
       },
       {
-        name: 'uni-app',
+        name: 'Uni-app',
         desc: '使用 Vue.js 开发所有前端应用的框架',
         icon: 'uniapp.dcloud.io.png',
-        website: 'https://uniapp.dcloud.io/',
+        website: 'https://uniapp.dcloud.net.cn/',
       },
       {
-        name: 'webpack',
-        desc: '打包所有的资源',
-        icon: 'webpack.js.org.ico',
-        website: 'https://webpack.js.org/',
-      },
-      {
-        name: 'Node.js',
-        desc: '一个基于 Chrome V8 引擎 的 JavaScript 运行时',
-        icon: 'nodejs.org.png',
-        website: 'https://nodejs.org/zh-cn/',
-      },
-      {
-        name: 'NPM',
-        desc: ' Node package manager',
-        icon: 'www.npmjs.com.png',
-        website: 'https://www.npmjs.com/',
+        name: 'Taro',
+        desc: 'Taro 是由 京东·凹凸实验室 倾力打造的多端开发解决方案',
+        icon: 'taro-ui.jd.com.png',
+        website: 'https://taro-ui.jd.com/',
       },
       {
         name: 'AdonisJs',
