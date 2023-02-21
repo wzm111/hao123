@@ -396,7 +396,7 @@ export const tableData = [
       },
       {
         name: 'localstoredb',
-        desc: 'localstoredb',
+        desc: 'web储存工具，支持indexdb，websql，storage等',
         icon: 'www.npmjs.com.png',
         website: 'https://www.npmjs.com/package/localstoredb',
       },
@@ -579,6 +579,12 @@ export const tableData = [
     name: '工具',
     icon: 'el-icon-suitcase',
     children: [
+      {
+        name: 'easyclone-cli',
+        desc: '批量下载命令工具',
+        icon: 'www.npmjs.com.png',
+        website: 'https://www.npmjs.com/package/easyclone-cli',
+      },
       {
         name: 'JSON',
         desc: 'JSON在线解析及格式化验证',
@@ -766,12 +772,6 @@ export const tableData = [
         desc: '宣传自由软件的价值',
         icon: 'cloud.tencent.com.ico',
         website: 'https://mirrors.tencent.com/',
-      },
-      {
-        name: 'easyclone-cli',
-        desc: 'easyclone-clis',
-        icon: 'www.npmjs.com.png',
-        website: 'https://www.npmjs.com/package/easyclone-cli',
       },
     ],
   },
