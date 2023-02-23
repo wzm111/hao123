@@ -1,8 +1,20 @@
 export const tableData = [
   {
-    name: '阅读',
+    name: '技术社区',
     icon: 'el-icon-document',
     children: [
+      {
+        name: '开源中国',
+        desc: '目前国内最大的开源技术社区 ',
+        icon: 'www.oschina.net.ico',
+        website: 'https://www.oschina.net/',
+      },
+      {
+        name: '开发者头条',
+        desc: '程序员分享平台 ',
+        icon: 'toutiao.io.png',
+        website: 'https://toutiao.io/',
+      },
       {
         name: '知乎',
         desc: '中文互联网知名的可信赖问答社区',
@@ -42,6 +54,27 @@ export const tableData = [
       },
 
       {
+        name: 'InfoQ',
+        desc: '一个实践驱动的技术社区资讯站点 ',
+        icon: 'infoq.cn.jpeg',
+        website: 'https://xie.infoq.cn/',
+      },
+
+      {
+        name: 'StackOverflow',
+        desc: '全球最大的技术问答社区 ',
+        icon: 'stackoverflow.com.svg',
+        website: 'https://stackoverflow.com/',
+      },
+
+      {
+        name: 'ChinaUnix',
+        desc: '中国最大的Linux/Unix技术社区网站',
+        icon: 'www.chinaunix.net.png',
+        website: 'http://www.chinaunix.net/',
+      },
+
+      {
         name: '力扣（LeetCode）',
         desc: '全球极客挚爱的技术成长平台',
         icon: 'leetcode-cn.com.ico',
@@ -78,11 +111,18 @@ export const tableData = [
         icon: 'studygolang.com.ico',
         website: 'https://studygolang.com/',
       },
+
+      {
+        name: 'Ruby china',
+        desc: '国内最权威的 Ruby 社区',
+        icon: 'ruby-china.org.png',
+        website: 'https://ruby-china.org/',
+      },
     ],
   },
 
   {
-    name: '前端',
+    name: '前端开发',
     icon: 'el-icon-monitor',
     children: [
       {
@@ -459,7 +499,7 @@ export const tableData = [
   },
 
   {
-    name: 'Java',
+    name: 'Java开发',
     icon: 'el-icon-trophy',
     children: [
       {
@@ -505,7 +545,7 @@ export const tableData = [
     ],
   },
   {
-    name: 'Go',
+    name: 'Go开发',
     icon: 'el-icon-trophy',
     children: [
       {
@@ -547,7 +587,7 @@ export const tableData = [
     ]
   },
   {
-    name: 'Python',
+    name: 'Python开发',
     icon: 'el-icon-trophy',
     children: [
       {
@@ -622,7 +662,7 @@ export const tableData = [
     ],
   },
   {
-    name: 'PHP',
+    name: 'PHP开发',
     icon: 'el-icon-trophy',
     children: [
       {
@@ -673,7 +713,7 @@ export const tableData = [
   },
 
   {
-    name: '工具',
+    name: '常用工具',
     icon: 'el-icon-suitcase',
     children: [
       {
@@ -873,7 +913,7 @@ export const tableData = [
     ],
   },
   {
-    name: 'Chrome',
+    name: 'Chrome相关',
     icon: 'el-icon-bangzhu',
     children: [
       {

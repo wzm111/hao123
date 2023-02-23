@@ -7,7 +7,9 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "dayjs": "^1.11.7",
     "lazysizes": "^5.3.2",
+    "localstoredb": "^1.2.1",
     "pinia": "^2.0.8",
     "reset.css": "^2.0.2",
     "vue": "^3.2.13",
