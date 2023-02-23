@@ -70,7 +70,7 @@ export default {
       showSuggestion: false,
       list: '',
       isFocus: true,
-      searchEngine: 'baidu',
+      searchEngine: 'bing',
       searchEngineConfig,
     };
   },

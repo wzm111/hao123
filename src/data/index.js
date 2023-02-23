@@ -72,6 +72,12 @@ export const tableData = [
         icon: 'www.liaoxuefeng.com.ico',
         website: 'https://www.liaoxuefeng.com/',
       },
+      {
+        name: 'Go语言中文网',
+        desc: 'Go语言中文网，中国 Golang 社区，Go语言学习园地，致力于构建完善的 Golang 中文社区，Go语言爱好者的学习家园。分享 Go 语言知识，交流使用经验',
+        icon: 'studygolang.com.ico',
+        website: 'https://studygolang.com/',
+      },
     ],
   },
 
@@ -497,6 +503,48 @@ export const tableData = [
         ],
       },
     ],
+  },
+  {
+    name: 'Go',
+    icon: 'el-icon-trophy',
+    children: [
+      {
+        name: 'Go',
+        desc: 'go语言（或 Golang）是Google开发的开源编程语言',
+        icon: 'golang.google.cn.jpeg',
+        website: 'https://golang.google.cn/',
+        children: [
+          {
+            name: '中文文档',
+            website: 'https://topgoer.com/',
+          },
+        ],
+      },
+      {
+        name: 'Beego',
+        desc: '一个使用 Go 的思维来帮助您构建并开发 Go 应用程序的开源框架。',
+        icon: 'golang.google.cn.jpeg',
+        website: 'https://beego.gocn.vip/beego/zh/developing/',
+        children: [
+          {
+            name: 'Github',
+            website: 'https://github.com/beego/beego',
+          },
+        ],
+      },
+      {
+        name: 'Echo',
+        desc: '高性能、可扩展的、简约的 Web 框架。',
+        icon: 'echo.labstack.com.png',
+        website: 'https://echo.labstack.com/',
+      },
+      {
+        name: 'Gin',
+        desc: '一个 Go 语言 Web 框架。提供和 martini 类似的 API，但性能使其 40 倍以上。',
+        icon: 'gin-gonic.com.ico',
+        website: 'https://gin-gonic.com/zh-cn/',
+      },
+    ]
   },
   {
     name: 'Python',
