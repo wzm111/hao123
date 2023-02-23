@@ -3,6 +3,14 @@
  */
 export const searchEngineConfig = [
   {
+    value: 'bing',
+    label: '必应',
+    logo: 'bing.png',
+    callback(keyword) {
+      return `https://cn.bing.com/search?q=${keyword}`;
+    },
+  },
+  {
     value: 'baidu',
     label: '百度',
     logo: 'baidu.png',
@@ -19,16 +27,6 @@ export const searchEngineConfig = [
       return `https://www.sogou.com/web?query=${keyword}`;
     },
   },
-
-  {
-    value: 'bing',
-    label: '必应',
-    logo: 'bing.png',
-    callback(keyword) {
-      return `https://cn.bing.com/search?q=${keyword}`;
-    },
-  },
-
   {
     value: 'google',
     label: 'Google',
