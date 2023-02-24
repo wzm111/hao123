@@ -33,7 +33,7 @@ import {tableData} from '../data/index.js';
 import FixedNavBar from './FixedNavBar.vue';
 import Footer from './Footer.vue';
 import Header from './Header.vue';
-import Search from './qq-search/index.vue';
+import Search from './newSearch/index.vue';
 import HotData from './HotData.vue';
 
 export default {

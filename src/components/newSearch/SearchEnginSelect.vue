@@ -50,13 +50,11 @@ export default {
     computed: {},
 
     methods: {
-        async getData() { },
-
-        handleItemClick(index) {
+        async handleItemClick(index) {
             this.currentItem = searchEngineConfig[index];
             this.$emit('on-change', this.currentItem);
 
-            localStorage.setItem(
+            $localStore.setItem(
                 'current-search-engine',
                 JSON.stringify({index: index})
             );
@@ -67,8 +65,8 @@ export default {
         },
     },
 
-    created() {
-        let currentSearchEngine = localStorage.getItem('current-search-engine');
+    async created() {
+        let currentSearchEngine = await $localStore.getItem('current-search-engine');
 
         if (currentSearchEngine) {
             currentSearchEngine = JSON.parse(currentSearchEngine);
@@ -80,7 +78,6 @@ export default {
         this.currentItem = searchEngineConfig[currentSearchEngineIndex];
 
         this.$emit('on-change', this.currentItem);
-        this.getData();
     },
 };
 </script>
@@ -93,8 +90,11 @@ export default {
         display: block;
         text-align: center;
         background-color: #ffffff;
-        // line-height: 36px;
+        line-height: 36px;
         text-align: center;
+        .search-engin-select__item {
+            padding: 5px;
+        }
     }
 
     &:hover &__list {
@@ -108,13 +108,13 @@ export default {
         top: 36px;
         left: 0;
         background-color: #ffffff;
-        text-align: center;
+        text-align: left;
         border: 1px solid #d8e0ed;
     }
 
     &__item {
         display: block;
-        padding: 5px;
+        padding: 10px;
         box-sizing: border-box;
         color: #666;
         width: 120px;
