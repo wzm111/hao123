@@ -1,9 +1,7 @@
-export const tableData = [
-  {
+export const tableData = [{
     name: '技术社区',
     icon: 'el-icon-document',
-    children: [
-      {
+    children: [{
         name: '开源中国',
         desc: '目前国内最大的开源技术社区 ',
         icon: 'www.oschina.net.ico',
@@ -124,8 +122,7 @@ export const tableData = [
   {
     name: '前端开发',
     icon: 'el-icon-monitor',
-    children: [
-      {
+    children: [{
         name: 'Vue',
         desc: '渐进式JavaScript 框架',
         icon: 'cn.vuejs.org.png',
@@ -225,8 +222,7 @@ export const tableData = [
         desc: '轻量、可靠的移动端 Vue 组件库',
         icon: 'vant.youzan.github.io.png',
         website: 'https://youzan.github.io/vant/#/zh-CN/',
-        children: [
-          {
+        children: [{
             name: 'vant',
             website: 'https://vant-contrib.gitee.io/vant/#/zh-CN/',
           },
@@ -338,12 +334,10 @@ export const tableData = [
         desc: '轮播图幻灯片js插件',
         icon: 'swiperjs.com.png',
         website: 'https://swiperjs.com/',
-        children: [
-          {
-            name: 'zh',
-            website: 'https://www.swiper.com.cn/',
-          },
-        ],
+        children: [{
+          name: 'zh',
+          website: 'https://www.swiper.com.cn/',
+        }, ],
       },
       {
         name: 'Animate.css',
@@ -368,24 +362,20 @@ export const tableData = [
         desc: '日期和时间',
         icon: 'day.js.org.ico',
         website: 'https://day.js.org/',
-        children: [
-          {
-            name: 'zh',
-            website: 'https://dayjs.gitee.io/zh-CN/',
-          },
-        ],
+        children: [{
+          name: 'zh',
+          website: 'https://dayjs.gitee.io/zh-CN/',
+        }, ],
       },
       {
         name: 'timeago.js',
         desc: '显示几小时之前',
         icon: 'timeago.org.png',
         website: 'https://timeago.org/',
-        children: [
-          {
-            name: 'github',
-            website: 'https://github.com/hustcc/timeago.js',
-          },
-        ],
+        children: [{
+          name: 'github',
+          website: 'https://github.com/hustcc/timeago.js',
+        }, ],
       },
       {
         name: 'ECharts',
@@ -411,36 +401,30 @@ export const tableData = [
         desc: 'Vue拖拽组件',
         icon: 'sortablejs.github.io.ico',
         website: 'https://sortablejs.github.io/Vue.Draggable/',
-        children: [
-          {
-            name: 'github',
-            website: 'https://github.com/SortableJS/Vue.Draggable',
-          },
-        ],
+        children: [{
+          name: 'github',
+          website: 'https://github.com/SortableJS/Vue.Draggable',
+        }, ],
       },
       {
         name: 'vue-qr',
         desc: 'Vue生成二维码',
         icon: 'Binaryify.github.io.jpeg',
         website: 'https://github.com/Binaryify/vue-qr',
-        children: [
-          {
-            name: 'npm',
-            website: 'https://www.npmjs.com/package/vue-qr',
-          },
-        ],
+        children: [{
+          name: 'npm',
+          website: 'https://www.npmjs.com/package/vue-qr',
+        }, ],
       },
       {
         name: 'vue-cropper',
         desc: 'Vue图片剪裁',
         icon: 'xyxiao.github.io.ico',
         website: 'https://github.com/xyxiao001/vue-cropper',
-        children: [
-          {
-            name: 'example',
-            website: 'http://github.xyxiao.cn/vue-cropper/example/',
-          },
-        ],
+        children: [{
+          name: 'example',
+          website: 'http://github.xyxiao.cn/vue-cropper/example/',
+        }, ],
       },
 
       {
@@ -448,8 +432,7 @@ export const tableData = [
         desc: '图片懒加载',
         icon: 'hilongjw.github.io.jpeg',
         website: 'http://hilongjw.github.io/vue-lazyload/',
-        children: [
-          {
+        children: [{
             name: 'npm',
             website: 'https://www.npmjs.com/package/vue-lazyload',
           },
@@ -464,12 +447,10 @@ export const tableData = [
         desc: 'Vue上传组件',
         icon: 'saivarunk.github.io.png',
         website: 'https://saivarunk.github.io/vue-simple-upload/',
-        children: [
-          {
-            name: 'github',
-            website: 'https://github.com/saivarunk/vue-simple-upload',
-          },
-        ],
+        children: [{
+          name: 'github',
+          website: 'https://github.com/saivarunk/vue-simple-upload',
+        }, ],
       },
       {
         name: 'Pinia',
@@ -501,8 +482,7 @@ export const tableData = [
   {
     name: 'Java开发',
     icon: 'el-icon-trophy',
-    children: [
-      {
+    children: [{
         name: 'Java',
         desc: '一项用于开发应用程序的技术',
         icon: 'www.java.com.png',
@@ -531,8 +511,7 @@ export const tableData = [
         desc: '一个小而全的Java工具类库',
         icon: 'hutool.cn.jpg',
         website: 'https://hutool.cn/',
-        children: [
-          {
+        children: [{
             name: 'Doc',
             website: 'https://hutool.cn/docs/',
           },
@@ -547,30 +526,25 @@ export const tableData = [
   {
     name: 'Go开发',
     icon: 'el-icon-trophy',
-    children: [
-      {
+    children: [{
         name: 'Go',
         desc: 'go语言（或 Golang）是Google开发的开源编程语言',
         icon: 'golang.google.cn.jpeg',
         website: 'https://golang.google.cn/',
-        children: [
-          {
-            name: '中文文档',
-            website: 'https://topgoer.com/',
-          },
-        ],
+        children: [{
+          name: '中文文档',
+          website: 'https://topgoer.com/',
+        }, ],
       },
       {
         name: 'Beego',
         desc: '一个使用 Go 的思维来帮助您构建并开发 Go 应用程序的开源框架。',
         icon: 'golang.google.cn.jpeg',
         website: 'https://beego.gocn.vip/beego/zh/developing/',
-        children: [
-          {
-            name: 'Github',
-            website: 'https://github.com/beego/beego',
-          },
-        ],
+        children: [{
+          name: 'Github',
+          website: 'https://github.com/beego/beego',
+        }, ],
       },
       {
         name: 'Echo',
@@ -589,8 +563,7 @@ export const tableData = [
   {
     name: 'Python开发',
     icon: 'el-icon-trophy',
-    children: [
-      {
+    children: [{
         name: 'Python',
         desc: '一种跨平台、面向对象的动态类型语言',
         icon: 'www.python.org.png',
@@ -652,30 +625,25 @@ export const tableData = [
         desc: 'a simple yet beautiful ActiveRecord implementation',
         icon: 'orator-orm.com.jpeg',
         website: 'https://orator-orm.com/',
-        children: [
-          {
-            name: 'Github',
-            website: 'https://github.com/sdispater/orator',
-          },
-        ],
+        children: [{
+          name: 'Github',
+          website: 'https://github.com/sdispater/orator',
+        }, ],
       },
     ],
   },
   {
     name: 'PHP开发',
     icon: 'el-icon-trophy',
-    children: [
-      {
+    children: [{
         name: 'PHP',
         desc: '一种创建动态交互性站点的强有力的服务器端脚本语言',
         icon: 'www.php.net.png',
         website: 'https://www.php.net/',
-        children: [
-          {
-            name: 'PHP手册',
-            website: 'https://www.php.net/manual/zh/index.php',
-          },
-        ],
+        children: [{
+          name: 'PHP手册',
+          website: 'https://www.php.net/manual/zh/index.php',
+        }, ],
       },
       {
         name: 'packagist',
@@ -694,8 +662,7 @@ export const tableData = [
         desc: '一个为API开发而设计的高性能框架',
         icon: 'www.thinkphp.cn.png',
         website: 'http://www.thinkphp.cn/',
-        children: [
-          {
+        children: [{
             name: 'doc6.0',
             website: 'https://www.kancloud.cn/manual/thinkphp6_0/1037479',
           },
@@ -713,10 +680,160 @@ export const tableData = [
   },
 
   {
+    name: '程序员工具',
+    icon: 'el-icon-suitcase',
+    children: [{
+        name: "时间戳转换",
+        desc: "",
+        icon: "timestamp.png",
+        website: "https://tool.lu/timestamp/"
+      },
+      {
+        name: "jQuery 速查表",
+        desc: "",
+        icon: "jQuery.ico",
+        website: "http://hemin.cn/jq/"
+      },
+      {
+        name: "在线PS",
+        desc: "",
+        icon: "ps.png",
+        website: "https://pixlr.com/cn/x/"
+      },
+      {
+        name: "Linux命令大全",
+        desc: "",
+        icon: "redhat.png",
+        website: "https://www.linuxcool.com/"
+      },
+      {
+        name: "在线代码测试",
+        desc: "",
+        icon: "code.png",
+        website: "https://tool.lu/coderunner/"
+      },
+      {
+        name: "curl命令转代码",
+        desc: "",
+        icon: "curl.png",
+        website: "https://tool.lu/curl/"
+      },
+      {
+        name: "网上计算器",
+        desc: "",
+        icon: "cal.png",
+        website: "http://cal.apple886.com/"
+      },
+      {
+        name: "文件格式转换",
+        desc: "",
+        icon: "convertio.ico",
+        website: "https://convertio.co/zh/"
+      },
+      {
+        name: "进制转换",
+        desc: "",
+        icon: "hexconvert.png",
+        website: "https://tool.lu/hexconvert/"
+      },
+      {
+        name: "图片base64编码",
+        desc: "",
+        icon: "base64.png",
+        website: "https://tool.lu/base64image/"
+      },
+      {
+        name: "公众号",
+        desc: "",
+        icon: "wx.ico",
+        website: "https://mp.weixin.qq.com/"
+      },
+
+      {
+        name: "IP地址查询",
+        desc: "",
+        icon: "ip.png",
+        website: "https://tool.lu/ip/"
+      },
+      {
+        name: "中文简繁体转换",
+        desc: "",
+        icon: "zf.png",
+        website: "https://tool.lu/zhconvert"
+      },
+      {
+        name: "在线收藏网址",
+        desc: "",
+        icon: "favorites.ico",
+        website: "http://favorites.ren/"
+      },
+      {
+        name: "下载链接转换工具",
+        desc: "",
+        icon: "down.png",
+        website: "https://tool.lu/urlconvert/"
+      },
+      {
+        name: "Cron表达式",
+        desc: "",
+        icon: "cron.png",
+        website: "https://tool.lu/crontab"
+      },
+      {
+        name: "二维码制作工具",
+        desc: "",
+        icon: "er.png",
+        website: "https://cli.im/"
+      },
+      {
+        name: "在线文本对比",
+        desc: "",
+        icon: "compare.ico",
+        website: "https://text-compare.com/zh-hans/"
+      },
+      {
+        name: "加密解密",
+        desc: "",
+        icon: "jj.png",
+        website: "https://tool.lu/encdec/"
+      },
+      {
+        name: "数字大写转换器",
+        desc: "",
+        icon: "dx.png",
+        website: "https://tool.gaodun.com/rmb.html"
+      },
+      {
+        name: "正则表达式测试",
+        desc: "",
+        icon: "oschina.ico",
+        website: "https://tool.oschina.net/regex/"
+      },
+      {
+        name: "字数统计",
+        desc: "",
+        icon: "wd.ico",
+        website: "https://www.eteste.com/"
+      },
+      {
+        name: "谷歌翻译",
+        desc: "",
+        icon: "gf.ico",
+        website: "https://translate.google.cn/"
+      },
+      {
+        name: "百度翻译",
+        desc: "",
+        icon: "bf.ico",
+        website: "https://fanyi.baidu.com/translate"
+      },
+    ]
+  },
+
+  {
     name: '常用工具',
     icon: 'el-icon-suitcase',
-    children: [
-      {
+    children: [{
         name: 'easyclone-cli',
         desc: '批量下载命令工具',
         icon: 'www.npmjs.com.png',
@@ -915,8 +1032,7 @@ export const tableData = [
   {
     name: 'Chrome相关',
     icon: 'el-icon-bangzhu',
-    children: [
-      {
+    children: [{
         name: 'CrxDL.COM',
         desc: '下载Chrome扩展插件Crx离线安装包',
         icon: 'crxdl.com.png',
