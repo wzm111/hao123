@@ -743,7 +743,7 @@ export const tableData = [{
         website: "https://tool.lu/base64image/"
       },
       {
-        name: "公众号",
+        name: "微信公众平台",
         desc: "",
         icon: "wx.ico",
         website: "https://mp.weixin.qq.com/"
