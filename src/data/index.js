@@ -26,6 +26,14 @@ export const tableData = [{
         icon: 'juejin.im.png',
         website: 'https://juejin.im/',
       },
+
+      {
+        name: '简书',
+        desc: '一个分享开发者的社区',
+        icon: 'www.jianshu.com.ico',
+        website: 'https://www.jianshu.com/techareas/',
+      },
+      
       {
         name: 'CSDN',
         desc: '专业IT技术社区',
@@ -475,6 +483,12 @@ export const tableData = [{
         desc: 'web储存工具，支持indexdb，websql，storage等',
         icon: 'www.npmjs.com.png',
         website: 'https://www.npmjs.com/package/localstoredb',
+      },
+      {
+        name: 'easy-use-directives',
+        desc: 'vue-directives插件',
+        icon: 'www.npmjs.com.png',
+        website: 'https://www.npmjs.com/package/easy-use-directives',
       },
     ],
   },
