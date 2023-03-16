@@ -162,7 +162,7 @@ export const tableData = [
       },
 
       {
-        name: 'Node.js',
+        name: 'NodeJs',
         desc: '一个基于 Chrome V8 引擎 的 JavaScript 运行时',
         icon: 'nodejs.org.png',
         website: 'https://nodejs.org/zh-cn/'
@@ -175,7 +175,7 @@ export const tableData = [
       },
       {
         name: 'Vue CLI',
-        desc: 'Vue.js 开发的标准工具',
+        desc: 'Vue 开发的标准工具',
         icon: 'cn.vuejs.org.png',
         website: 'https://cli.vuejs.org/zh/'
       },
@@ -317,9 +317,9 @@ export const tableData = [
       },
       {
         name: 'AdonisJs',
-        desc: '一个语法清新和优雅的Node.js Web框架',
+        desc: '一个语法清新和优雅的NodeJs Web框架',
         icon: 'adonisjs.com.cn.png',
-        website: 'https://adonisjs.com.cn/'
+        website: 'https://adonisjs.com/'
       },
       {
         name: 'Nuxt.js',
@@ -359,7 +359,7 @@ export const tableData = [
       },
       {
         name: 'iView',
-        desc: '一套基于 Vue.js 的高质量UI 组件库',
+        desc: '一套基于 Vue 的高质量UI 组件库',
         icon: 'www.iviewui.com.ico',
         website: 'https://www.iviewui.com/'
       },
