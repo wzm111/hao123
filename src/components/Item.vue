@@ -6,7 +6,7 @@
         @click="handleItemClick"
     >
         <div class="item__title-logo">
-            <img class="item__logo lazyload" :data-src="icon" />
+            <img class="item__logo" v-lazy="icon" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
             <span class="item__title">{{ item.name }}</span>
         </div>
 
@@ -97,6 +97,15 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.lazyload,
+.lazyloading {
+	opacity: 0;
+}
+.lazyloaded {
+	opacity: 1;
+	transition: opacity 300ms;
+}
+
 .item {
     display: block;
     border-radius: 6px;
