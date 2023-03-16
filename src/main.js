@@ -10,10 +10,12 @@ import {
     createPinia
 } from 'pinia';
 import LocalStore from 'localstoredb';
+import easyUseDirectives from 'easy-use-directives';
 
 const app = createApp(App);
 
 app.use(createPinia());
+app.use(easyUseDirectives);
 
 let options = {
     storeType: ['storage'], // 储存类型

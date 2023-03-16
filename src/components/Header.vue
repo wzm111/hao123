@@ -7,8 +7,7 @@
                 </a>
             </div>
 
-            <div class="data-time">
-                {{ nowDate }}
+            <div class="data-time" v-formatdate="{times: nowDate, format: 'YYYY年MM月DD日 hh:mm:ss 星期w', zh: true}">
             </div>
         </div>
     </div>
@@ -26,22 +25,18 @@ export default {
 
     data() {
         return {
-            nowDate: ''
+            nowDate: new Date()
         };
     },
 
     computed: {},
 
     methods: {
-        async getTimesStr() {
-            const weeks = ['日', '一', '二', '三', '四', '五', '六']
-            this.nowDate = `${dayjs(new Date()).format('YYYY年 MM月DD日')} 星期${weeks[dayjs(new Date()).format('d')]} ${dayjs(new Date()).format('HH:mm:ss')}`;
-        },
     },
 
     created() {
         setInterval(() => {
-            this.getTimesStr();
+            this.nowDate = new Date();
         }, 1000)
     },
 };
