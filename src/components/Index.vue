@@ -82,8 +82,9 @@ export default {
         },
         onHandlerClick(index) {
             this.active = index;
+            const top = index !== 999 ? this.$refs['itemContainer'][index].offsetTop : 0
             window.scrollTo({
-                top: this.$refs['itemContainer'][index].offsetTop,
+                top: top,
                 behavior: 'smooth'
             })
         },

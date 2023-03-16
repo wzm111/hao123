@@ -5,7 +5,7 @@
                 item.name
             }}</div>
         </template>
-        <a href="#" class="fixed-navbar__item">回顶部</a>
+        <span @click="getClick(999)" class="fixed-navbar__item">回顶部</span>
     </div>
 </template>
 
