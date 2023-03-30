@@ -35,6 +35,11 @@ import {mapActions} from 'pinia';
 
 // const store = useHotDataStore()
 
+// 是否是完整的url路径
+const isCompleteURL = (url) => {
+    return /(http|https):\/\/([\w.]+\/?)\S*/.test(url);
+}
+
 export default {
     name: 'Item',
 
@@ -56,9 +61,12 @@ export default {
     computed: {
         icon() {
             if (this.item.icon) {
+                if (isCompleteURL(this.item.icon)) {
+                    return this.item.icon;
+                } 
                 return `${this.$static_url}/static/img/${this.item.icon}`;
             } else {
-                return `${this.$static_url}/favicon.ico`;
+                return '//dcdn.it120.cc/2023/03/30/1c940fcc-754a-428a-a32a-eca971b8a95b.ico';
             }
         },
     },
