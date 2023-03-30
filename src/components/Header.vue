@@ -7,15 +7,16 @@
                 </a>
             </div>
 
-            <div class="data-time" v-formatdate="{times: nowDate, format: 'YYYY年MM月DD日 hh:mm:ss 星期w', zh: true}">
-            </div>
+            <div class="data-time" v-formatdate="{
+                times: nowDate,
+                format: 'YYYY年MM月DD日 hh:mm:ss 星期w',
+                zh: true
+            }"></div>
         </div>
     </div>
 </template>
 
 <script>
-import dayjs from 'dayjs';
-
 export default {
     name: 'Header',
 
@@ -26,20 +27,19 @@ export default {
     data() {
         return {
             nowDate: new Date()
-        };
+        }
     },
 
     computed: {},
 
-    methods: {
-    },
+    methods: {},
 
     created() {
         setInterval(() => {
-            this.nowDate = new Date();
+            this.nowDate = new Date()
         }, 1000)
-    },
-};
+    }
+}
 </script>
 
 <style lang="less" scoped>
@@ -48,6 +48,7 @@ export default {
     background-color: #000;
     color: #fff;
 }
+
 .header {
     height: 50px;
     line-height: 50px;
@@ -57,12 +58,15 @@ export default {
     padding-left: 20px;
     box-sizing: border-box;
     display: flex;
+
     .logo {
         flex: 1;
+
         h1 {
             color: #fff;
         }
     }
+
     .data-time {
         text-align: right;
     }

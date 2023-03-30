@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import {tableData} from '../data/index.js';
+// import {tableData} from '../data/index.js';
 export default {
     name: 'FixedNav',
 
@@ -21,15 +21,17 @@ export default {
         active: {
             type: Number,
             default: 0
+        },
+        tableData: {
+            type: Array,
+            default: []
         }
     },
 
     components: {},
 
     data() {
-        return {
-            tableData,
-        };
+        return {};
     },
 
     computed: {},

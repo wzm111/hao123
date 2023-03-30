@@ -22,19 +22,20 @@
 
         <Footer />
 
-        <FixedNavBar ref="fixedNavBar" :handlerClick="onHandlerClick" :active="active"  />
+        <FixedNavBar ref="fixedNavBar" :handlerClick="onHandlerClick" :active="active" :tableData="tableData"  />
     </div>
 </template>
 
 <script>
 // created at 2021-09-29
 import Item from './Item.vue';
-import {tableData} from '../data/index.js';
+// import {tableData} from '../data/index.js';
 import FixedNavBar from './FixedNavBar.vue';
 import Footer from './Footer.vue';
 import Header from './Header.vue';
 import Search from './newSearch/index.vue';
 import HotData from './HotData.vue';
+import { basic } from '../api';
 
 export default {
     name: 'Index',
@@ -52,14 +53,16 @@ export default {
 
     data() {
         return {
-            tableData,
+            tableData: [],
             active: 0,
             activeArr: []
         };
     },
 
-    computed: {},
-    mounted() {
+    computed: {
+    },
+    async mounted() {
+        await this.queryList();
         this.init()
         window.onresize = () => {
             this.init()
@@ -67,11 +70,15 @@ export default {
     },
 
     methods: {
+        async queryList() {
+            const res = await basic.QueryList({});
+            this.tableData = res;
+        },
         init() {
             this.$nextTick(() => {
                 setTimeout(() => {
                     this.activeArr = []
-                    this.$refs['itemContainer'].map(item => {
+                    this.$refs['itemContainer']?.map(item => {
                         // item.style.background = `#${Math.floor(Math.random() * 0xffffff).toString(16)}`
                         this.activeArr.push(item.offsetTop)
                     })

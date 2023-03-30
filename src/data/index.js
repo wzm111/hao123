@@ -1162,18 +1162,3 @@ export const tableData = [
     ]
   }
 ]
-/**
-   * 
-   * * 1、MDN developer.mozilia.org
-  2、caniuse.com
-  3、css-tricks.com
-  4、codepen.io
-  5、medium.com
-  6、hackernoon.com
-  7、stackoverflow.com
-  8、freecodecamp.com
-  9、reactjs.org
-  10、segmentfault.com
-  11、juejin.im
-  12、csdn
-   */
