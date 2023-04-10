@@ -16,6 +16,17 @@ class Basic extends Abstract {
         }
         return [];
     }
+
+    /**
+     * 查询页
+     */
+    async addMessage(params) {
+        const res = await this.getReq({ url: 'project.addMessage', params });
+        if (res.origin?.msg === 'success') {
+            return res.data;
+        }
+        return false;
+    }
 }
 
 // 单列模式返回对象

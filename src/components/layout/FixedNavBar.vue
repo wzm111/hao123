@@ -1,11 +1,12 @@
 <template>
     <div class="fixed-navbar">
+        <span @click="getClick(1000)" class="fixed-navbar__item to-message">给我留言</span>
         <template v-for="(item, index) in tableData">
             <div :class="`fixed-navbar__item ${active === index ? 'active' : ''}`" @click="getClick(index)">{{
                 item.name
             }}</div>
         </template>
-        <span @click="getClick(999)" class="fixed-navbar__item">回顶部</span>
+        <span @click="getClick(999)" class="fixed-navbar__item to-top">回到顶部 ↑</span>
     </div>
 </template>
 
@@ -82,6 +83,15 @@ export default {
             color: #666;
             background-color: #f6fbff;
         }
+    }
+
+    .to-message {
+        background-color: cadetblue;
+        color: #f5f5f5;
+    }
+    .to-top {
+        background-color: #000;
+        color: #f5f5f5;
     }
 }
 @media (max-width: 480px) {

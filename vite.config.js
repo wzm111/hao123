@@ -40,7 +40,7 @@ export default defineConfig({
 
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
+      '@': resolve(__dirname, './src'),
       // vue: 'https://esm.sh/vue@3.2.13',
       // lazysizes: 'https://esm.sh/lazysizes',
     },

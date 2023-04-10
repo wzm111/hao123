@@ -23,19 +23,21 @@
         <Footer />
 
         <FixedNavBar ref="fixedNavBar" :handlerClick="onHandlerClick" :active="active" :tableData="tableData"  />
+
+        <comment-editor :submit="toMessage" :isShow="toMegShow"></comment-editor>
     </div>
 </template>
 
 <script>
 // created at 2021-09-29
-import Item from './Item.vue';
+import Item from '@/components/layout/Item.vue';
 // import {tableData} from '../data/index.js';
-import FixedNavBar from './FixedNavBar.vue';
-import Footer from './Footer.vue';
-import Header from './Header.vue';
-import Search from './newSearch/index.vue';
-import HotData from './HotData.vue';
-import { basic } from '../api';
+import FixedNavBar from '@/components/layout/FixedNavBar.vue';
+import Footer from '@/components/layout/Footer.vue';
+import Header from '@/components/layout/Header.vue';
+import Search from '@/components/newSearch/index.vue';
+import HotData from '@/components/layout/HotData.vue';
+import { basic } from '@/api';
 
 export default {
     name: 'Index',
@@ -55,7 +57,8 @@ export default {
         return {
             tableData: [],
             active: 0,
-            activeArr: []
+            activeArr: [],
+            toMegShow: false
         };
     },
 
@@ -89,11 +92,17 @@ export default {
         },
         onHandlerClick(index) {
             this.active = index;
-            const top = index !== 999 ? this.$refs['itemContainer'][index].offsetTop : 0
-            window.scrollTo({
-                top: top,
-                behavior: 'smooth'
-            })
+            
+            if (index !== 1000) {
+                const top = index !== 999 ? this.$refs['itemContainer'][index].offsetTop : 0;
+                window.scrollTo({
+                    top: top,
+                    behavior: 'smooth'
+                })
+            } else {
+                this.toMegShow = !this.toMegShow;
+            }
+            
         },
         onScroll() {
             let scrolled = document.documentElement.scrollTop || document.body.scrollTop;
@@ -103,6 +112,12 @@ export default {
                     
                 }
             })
+        },
+        async toMessage(txt){
+            const res = await basic.addMessage({content: txt});
+            if (res) {
+                this.toMegShow = false;
+            }
         }
     }
 };

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Index from './components/Index.vue';
+import Index from '@/view/index/Index.vue';
 import {useHotDataStore} from '@/stores/hot-data-store.js';
 import {mapActions} from 'pinia';
 

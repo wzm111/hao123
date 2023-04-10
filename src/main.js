@@ -11,11 +11,13 @@ import {
 } from 'pinia';
 import LocalStore from 'localstoredb';
 import easyUseDirectives from 'easy-use-directives';
+import CommentEditor from '@/components/messages';
 
 const app = createApp(App);
 
 app.use(createPinia());
 app.use(easyUseDirectives);
+app.component(CommentEditor.name, CommentEditor);
 
 let options = {
     storeType: ['storage'], // 储存类型

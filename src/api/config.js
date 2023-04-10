@@ -3,6 +3,7 @@ export const urlDict = {
     // cms
     project: {
         queryList: '/mock/project/queryList', // 查询
+        addMessage: '/comment/add', // 添加留言-评论
     }
 }
 
