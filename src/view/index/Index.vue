@@ -24,7 +24,7 @@
 
         <FixedNavBar ref="fixedNavBar" :handlerClick="onHandlerClick" :active="active" :tableData="tableData"  />
 
-        <comment-editor :submit="toMessage" :isShow="toMegShow"></comment-editor>
+        <comment-editor :submit="toMessage" v-model:isShow="toMegShow"></comment-editor>
     </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <div class="fixed-navbar">
-        <span @click="getClick(1000)" class="fixed-navbar__item to-message">给我留言</span>
+        <span @click="getClick(1000, $event)" class="fixed-navbar__item to-message">给我留言</span>
         <template v-for="(item, index) in tableData">
             <div :class="`fixed-navbar__item ${active === index ? 'active' : ''}`" @click="getClick(index)">{{
                 item.name
@@ -38,7 +38,8 @@ export default {
     computed: {},
 
     methods: {
-        async getClick(index) { 
+        async getClick(index, e) { 
+            e && e.stopPropagation();
             this.handlerClick(index);
         },
     },

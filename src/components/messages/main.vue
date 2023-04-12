@@ -1,5 +1,5 @@
 <template>
-  <div class="comment-editor" ref="container" v-show="isShow">
+  <div class="comment-editor" ref="container" v-show="isShow" v-clickout:[clickCancel]>
     <div class="input-wrapper" :class="{ inline }">
       <input-box
         ref="inputBox"
@@ -54,6 +54,12 @@
       >
         {{ buttonText }}
       </div>
+      <div
+        @click="clickCancel"
+        class="submit-button cancel"
+      >
+        {{ cancelText }}
+      </div>
     </div>
   </div>
 </template>
@@ -75,6 +81,10 @@ export default {
     buttonText: {
       type: String,
       default: '提交'
+    },
+    cancelText: {
+      type: String,
+      default: '取消'
     },
     inline: {
       type: Boolean,
@@ -103,6 +113,9 @@ export default {
     // getInputContent(text) {
     //   this.inputContent = text;
     // },
+    clickCancel() {
+        this.$emit('update:isShow', false);
+    },
     focus() {
       this.$refs.inputBox.focus()
     },
@@ -206,6 +219,7 @@ export default {
   padding: 6px 10px;
   color: white;
   user-select: none;
+  margin-left: 10px;
 
   &.button-enter,
   &.button-leave-to {
@@ -225,6 +239,10 @@ export default {
 
   &:not([disabled]):active {
     background: #3a8ee6;
+  }
+  &.cancel {
+    background: #f5f5f5;
+    color: #333;
   }
 }
 </style>
