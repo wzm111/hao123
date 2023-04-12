@@ -14,25 +14,25 @@ export const useHotDataStore = defineStore({
 
   getters: {
     reverselist: (state) => {
-      return state.list.reverse()
+      return state.list;
     },
 
     hasHotData() {
-      return this.reverselist && this.reverselist.length > 0
+      return this.reverselist && this.reverselist.length > 0;
     }
   },
 
   actions: {
     async loadHotData() {
-      let data = await $localStore.getItem('HotData')
+      let data = await $localStore.getItem('HotData');
       if (data) {
-        this.list = JSON.parse(data)
+        this.list = data;
       }
     },
 
     async clearHotData() {
-      this.list.splice(0, this.list.length)
-      await $localStore.removeItem('HotData')
+      this.list.splice(0, this.list.length);
+      await $localStore.removeItem('HotData');
     },
 
     async appendItem(item) {
@@ -42,14 +42,15 @@ export const useHotDataStore = defineStore({
       })
 
       if (index > -1) {
-        this.list.splice(index, 1)
+        this.list.splice(index, 1);
       }
 
       // 最多存10个
-      this.list.splice(9, this.list.length)
+      this.list.splice(9, this.list.length);
 
-      this.list.push(item)
-      await $localStore.setItem('HotData', JSON.stringify(this.list));
+      this.list = [item, ...this.list];
+
+      await $localStore.setItem('HotData', this.list);
     }
   }
 })

@@ -77,20 +77,20 @@ export default {
         getSrc(name) {
             const path = `/assets/img/${name}`;
             const modules = import.meta.globEager('/assets/img/**');
-            console.log(modules);
+            // console.log(modules);
 
             return modules[path].default;
         },
 
         handleItemClick() {
-            console.log('handleItemClick', this.item);
+            // console.log('handleItemClick', this.item);
             // this.appendItem(this.item)
             // useHotDataStore.appendItem(this.item)
             this.appendItem(this.item)
         },
 
         handleChildClick(child) {
-            console.log('handleChildClick', child);
+            // console.log('handleChildClick', child);
             this.appendItem(child)
         },
 
